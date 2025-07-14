@@ -1,155 +1,109 @@
-/* General styles */
 body {
   font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff8f7;
+  color: #3c2a2a;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  color: #333;
-  background: #f9f9f9;
-}
-
-/* Form container */
-.form-section {
-  max-width: 600px;
-  background: #fff;
-  margin: 3rem auto;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 h1 {
+  color: #d8a7b1;
   text-align: center;
-  color: #c49a6c;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
-/* Form elements */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
 label {
   display: block;
-  margin-top: 1.25rem;
-  font-weight: 600;
-  color: #333;
+  margin: 1rem 0 0.5rem;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 0.6rem;
-  margin-top: 0.3rem;
-  border: 1px solid #ccc;
+  padding: 0.75rem;
   border-radius: 6px;
+  border: 1px solid #e6cdd0;
   font-size: 1rem;
-  background-color: #fff;
-  transition: border-color 0.2s ease;
-}
-
-input:focus,
-textarea:focus {
-  border-color: #c49a6c;
-  outline: none;
 }
 
 textarea {
   resize: vertical;
+  height: 100px;
 }
 
-/* Radio Button Block Styles */
-.custom-build-group {
-  margin-top: 1.5rem;
-  border: none;
-  padding: 0;
-}
-
-.custom-build-group legend {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #333;
+/* Radio options */
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
 .radio-option {
-  display: inline-block;
-  margin-right: 1rem;
+  display: flex;
+  align-items: center;
 }
 
-.radio-option input {
-  display: none;
+.radio-option input[type="radio"] {
+  margin-right: 0.5rem;
 }
 
-.radio-option label {
-  display: inline-block;
-  padding: 0.5rem 1.25rem;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.radio-option input:checked + label {
-  font-weight: bold;
-  color: white;
-  background-color: #c49a6c;
-  border-color: #c49a6c;
-}
-
-/* Button */
 button {
-  margin-top: 2rem;
-  background-color: #c49a6c;
+  background-color: #d8a7b1;
   color: white;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
+  border-radius: 6px;
   cursor: pointer;
+  margin-top: 1rem;
+  font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #b5895d;
+  background-color: #c38b95;
 }
 
-/* Modal Styles */
+/* Modal */
 .modal {
   display: none;
   position: fixed;
   z-index: 1000;
+  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0,0,0,0.5);
 }
 
 .modal-content {
   background-color: #fff;
-  margin: 10% auto;
+  margin: auto;
   padding: 2rem;
+  border: 1px solid #e6cdd0;
+  width: 90%;
   max-width: 500px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   position: relative;
-  color: #333;
+  text-align: left;
 }
 
 .close-modal {
+  color: #5a4a4a;
   position: absolute;
   top: 10px;
-  right: 16px;
+  right: 20px;
+  font-size: 1.5rem;
   cursor: pointer;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #777;
-}
-
-.close-modal:hover {
-  color: #000;
-}
-
-#submission-summary {
-  padding-left: 1rem;
-  margin-top: 1rem;
 }

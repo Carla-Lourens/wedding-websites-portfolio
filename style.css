@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff8f7;
+  color: #3c2a2a;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: #d8a7b1;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #5a4a4a;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #3c2a2a;
+}
+
+.logo span {
+  color: #d8a7b1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a:hover {
+  color: #d8a7b1;
+}
+
+/* Hero Section */
+.hero {
+  background: #f5e6e8;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #3c2a2a;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #5a4a4a;
+}
+
+.cta-button {
+  background: #d8a7b1;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #c38b95;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  background: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #e6cdd0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card h3 {
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: #3c2a2a;
+}
+
+/* About Section */
+.about-section {
+  background: #fff8f7;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #5a4a4a;
+}
+
+/* Footer */
+.site-footer {
+  background: #f5e6e8;
+  text-align: center;
+  padding: 2rem;
+  color: #5a4a4a;
+  font-size: 0.9rem;
+}
+
+

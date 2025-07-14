@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Carla | Wedding Websites</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+    <header class="site-header">
+    <nav>
+      <h1 class="logo">Carla's<span> Wedding Websites</span></h1>
+      <ul class="nav-links">
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+   <main>
+    <section class="form-section">
+      <h1>Contact Carla</h1>
+      <form id="custom-contact-form">
+        <label for="full-name">Full Name *</label>
+        <input type="text" id="full-name" name="full-name" required pattern="[a-zA-Z]+ [a-zA-Z]+" title="Please enter both name and surname" />
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required />
+
+        <fieldset class="custom-build-group" required>
+          <legend>Do you need a custom build? *</legend>
+          <div class="radio-option">
+            <input type="radio" id="custom-yes" name="custom-build" value="Yes" required />
+            <label for="custom-yes">Yes</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="custom-no" name="custom-build" value="No" required />
+            <label for="custom-no">No</label>
+          </div>
+        </fieldset>
+
+        <label for="wedding-date">Wedding Date</label>
+        <input type="date" id="wedding-date" name="wedding-date" />
+
+        <label for="message">Message (optional)</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <h2>Thank You!</h2>
+      <p>Your message has been received. Here's what you submitted:</p>
+      <ul id="submission-summary"></ul>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Carla's Wedding Websites. All rights reserved.</p>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>

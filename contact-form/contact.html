@@ -9,39 +9,45 @@
 </head>
 <body>
 
-   <header class="site-header">
-  <nav>
-    <a href="../index.html" class="logo"><h1>Carla's <span>Wedding Websites</span></h1></a>
-    <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="../index.html#portfolio">Portfolio</a></li>
-      <li><a href="../index.html#about">About Me</a></li>
-      <li><a href="../pricing-page/pricing.html">Pricing</a></li>
-      <li><a href="contact-form/contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <header class="site-header">
+    <nav>
+      <a href="../index.html" class="logo"><h1>Carla's <span>Wedding Websites</span></h1></a>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="../index.html#portfolio">Portfolio</a></li>
+        <li><a href="../index.html#about">About Me</a></li>
+        <li><a href="../pricing-page/pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <section class="form-section">
       <h1>Contact Carla</h1>
       <form id="custom-contact-form" novalidate>
+        
         <label for="full-name">Full Name *</label>
         <input type="text" id="full-name" name="full-name" required pattern="[a-zA-Z]+ [a-zA-Z]+" title="Please enter both name and surname" />
+        <div class="field-error" id="name-error">Please enter your full name (first and last).</div>
 
         <label for="email">Email Address *</label>
         <input type="email" id="email" name="email" required />
+        <div class="field-error" id="email-error">Please enter a valid email address.</div>
 
-        <fieldset class="custom-build-group" required>
+        <fieldset class="custom-build-group">
           <legend>Do you need a custom build? *</legend>
-          <div class="radio-option">
-            <input type="radio" id="custom-yes" name="custom-build" value="Yes" required />
-            <label for="custom-yes">Yes</label>
+          <div class="radio-options">
+            <div class="radio-option">
+              <input type="radio" id="custom-yes" name="custom-build" value="Yes" required />
+              <label for="custom-yes">Yes</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="custom-no" name="custom-build" value="No" required />
+              <label for="custom-no">No</label>
+            </div>
           </div>
-          <div class="radio-option">
-            <input type="radio" id="custom-no" name="custom-build" value="No" required />
-            <label for="custom-no">No</label>
-          </div>
+          <div class="field-error" id="custom-build-error">Please select an option.</div>
         </fieldset>
 
         <label for="wedding-date">Wedding Date</label>
@@ -69,8 +75,9 @@
     <p>&copy; 2025 Carla's Wedding Websites. All rights reserved.</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="contact.js"></script>
   <script src="../script.js"></script>
-  
+
 </body>
 </html>

@@ -2,26 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pricing | Carla's Wedding Websites</title>
+  
+  <!-- Shared styles for header/nav/footer, base typography -->
+  <link rel="stylesheet" href="../style.css" />
+  <!-- Pricing page specific styles -->
   <link rel="stylesheet" href="pricing.css" />
-  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="site-header">
-    <nav>
-    <h1 class="logo">
-      <a href="index.html">Carla's<span> Wedding Websites</span></a>
-    </h1>
-      <ul class="nav-links">
-        <li><a href="index.html#portfolio">Portfolio</a></li>
-        <li><a href="index.html#about">About Me</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+   <header class="site-header">
+  <nav>
+    <a href="index.html" class="logo"><h1>Carla's <span>Wedding Websites</span></h1></a>
+    <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="pricing-page/pricing.html">Pricing</a></li>
+      <li><a href="contact-form/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main>
     <section class="hero pricing-hero">
@@ -49,11 +51,11 @@
         <div class="pricing-card">
           <h3>Signature Package</h3>
           <p class="price">R9,000</p>
-          <p>Elegant layout with gallery & schedule</p>
+          <p>Elegant layout with gallery &amp; schedule</p>
           <ul>
             <li>Multi-page site</li>
             <li>Photo galleries</li>
-            <li>Guest list & RSVP management</li>
+            <li>Guest list &amp; RSVP management</li>
             <li>5 revisions</li>
           </ul>
         </div>
@@ -61,10 +63,10 @@
         <div class="pricing-card">
           <h3>Luxury Package</h3>
           <p class="price">R15,000</p>
-          <p>High-end with motion & interactive features</p>
+          <p>High-end with motion &amp; interactive features</p>
           <ul>
             <li>Full-featured website</li>
-            <li>Animations & custom domain</li>
+            <li>Animations &amp; custom domain</li>
             <li>Ongoing support</li>
             <li>Unlimited revisions</li>
           </ul>
@@ -77,15 +79,15 @@
       <h2>Pick a Template Style</h2>
       <div class="template-grid">
         <div class="template-option">
-          <img src="Images/RusticBoho.png" alt="Rustic Boho Template" />
+          <img src="../Images/RusticBoho.png" alt="Rustic Boho Template" />
           <p>Boho Romance</p>
         </div>
         <div class="template-option">
-          <img src="Images/RefinedNatural.png" alt="Refined Natural Template" />
+          <img src="../Images/RefinedNatural.png" alt="Refined Natural Template" />
           <p>Refined Natural</p>
         </div>
         <div class="template-option">
-          <img src="Images/GardenParty.png" alt="Garden Party Template" />
+          <img src="../Images/GardenParty.png" alt="Garden Party Template" />
           <p>Garden Party</p>
         </div>
       </div>
@@ -152,13 +154,15 @@
 
     <section class="cta-section">
       <h2>Ready to Begin?</h2>
-      <p><a href="contact.html" class="cta-button">Get in Touch</a></p>
+      <p><a href="../contact.html" class="cta-button">Get in Touch</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>&copy; 2025 Carla's Wedding Websites. All rights reserved.</p>
   </footer>
+
+ <script src="../script.js"></script>
 
 </body>
 </html>

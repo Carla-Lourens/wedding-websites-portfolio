@@ -1,55 +1,4 @@
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: #3c2a2a;
-  background: #fff8f7;
-}
-
-h2, h3 {
-  color: #d8a7b1;
-  margin-bottom: 1rem;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-/* Header */
-.site-header {
-  background: #fff;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.logo {
-  font-size: 1.5rem;
-  color: #3c2a2a;
-}
-
-.logo a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #5a4a4a;
-}
-
-/* Hero Section */
-.pricing-hero {
-  background: #f5e6e8;
-  padding: 4rem 2rem;
-  text-align: center;
-}
+/* Pricing page specific styles */
 
 /* Pricing Section */
 .pricing-section {
@@ -85,6 +34,13 @@ ul {
   color: #d8a7b1;
 }
 
+/* Remove bullets from pricing lists */
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
 /* Template Section */
 .template-picker {
   padding: 3rem 2rem;
@@ -107,11 +63,12 @@ ul {
 }
 
 /* Color Palettes */
+/* Stack color groups vertically */
 .color-options {
   max-width: 800px;
   margin: 2rem auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  /* stack groups */
   gap: 2rem;
 }
 
@@ -122,8 +79,10 @@ ul {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* Keep individual color swatches horizontal inside each group */
 .palette-row {
   display: flex;
+  flex-direction: row;
   gap: 1rem;
   justify-content: center;
 }
@@ -164,11 +123,24 @@ ul {
   background-color: #c38b95;
 }
 
-/* Footer */
-.site-footer {
-  text-align: center;
-  padding: 2rem;
-  background: #f5e6e8;
-  font-size: 0.9rem;
-  color: #5a4a4a;
+/* Responsive Media Queries - tablet and desktop */
+@media (min-width: 768px) {
+  .pricing-grid {
+    justify-content: space-around;
+  }
+  .template-grid {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pricing-grid {
+    max-width: 1024px;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+  .template-grid {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
